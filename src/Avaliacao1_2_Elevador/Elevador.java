@@ -1,4 +1,4 @@
-package Avaliacao1_Elevador;
+package Avaliacao1_2_Elevador;
 
 
 import java.util.Scanner;
