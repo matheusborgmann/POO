@@ -1,15 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f56976cb-12b4-48ac-84ba-5c507dfa7d3f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/Matheus.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/untitled.iml" afterDir="false" />
+    <list default="true" id="f56976cb-12b4-48ac-84ba-5c507dfa7d3f" name="Changes" comment="Adicionei todos os outros códigos para dentro de uma unica pasta">
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled.iml" beforeDir="false" afterPath="$PROJECT_DIR$/POO.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,18 +23,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/Matheus/Downloads/IntelliJ.Portuguese.Brazil.Dictionary-master/portuguese-brazil_without-accents.dic",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "reference.settings.ide.settings.spelling"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Matheus/Downloads/IntelliJ.Portuguese.Brazil.Dictionary-master/portuguese-brazil_without-accents.dic&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.spelling&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Matheus\IdeaProjects\untitled\src" />
@@ -48,7 +43,7 @@
   <component name="RunManager" selected="Application.ProjetoSaidaDeDados.Program">
     <configuration name="Constructors.Program" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Constructors.Program" />
-      <module name="untitled" />
+      <module name="POO" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Constructors.*" />
@@ -61,7 +56,7 @@
     </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Avaliacao1_1_Agenda.Main" />
-      <module name="untitled" />
+      <module name="POO" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Avaliacao1_1_Agenda.*" />
@@ -74,7 +69,7 @@
     </configuration>
     <configuration name="Program" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ListaDeCompras.Program" />
-      <module name="untitled" />
+      <module name="POO" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="ListaDeCompras.*" />
@@ -87,7 +82,7 @@
     </configuration>
     <configuration name="ProjetoSaidaDeDados.Program" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ProjetoSaidaDeDados.Program" />
-      <module name="untitled" />
+      <module name="POO" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="ProjetoSaidaDeDados.*" />
@@ -115,6 +110,14 @@
       <option name="presentableId" value="Default" />
       <updated>1653321731799</updated>
     </task>
+    <task id="LOCAL-00001" summary="Adicionei todos os outros códigos para dentro de uma unica pasta">
+      <created>1653499958551</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1653499958551</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -139,5 +142,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Adicionei todos os outros códigos para dentro de uma unica pasta" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adicionei todos os outros códigos para dentro de uma unica pasta" />
   </component>
 </project>
