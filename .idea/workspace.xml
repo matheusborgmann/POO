@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f56976cb-12b4-48ac-84ba-5c507dfa7d3f" name="Changes" comment="agonia" />
+    <list default="true" id="f56976cb-12b4-48ac-84ba-5c507dfa7d3f" name="Changes" comment="atualizei o nome" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Merge.Settings">
+    <option name="BRANCH" value="origin/main" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -154,7 +157,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653521825375</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="atualizei o nome">
+      <created>1653522127837</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1653522127837</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -183,6 +193,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Adicionei todos os outros códigos para dentro de uma unica pasta" />
     <MESSAGE value="agonia" />
-    <option name="LAST_COMMIT_MESSAGE" value="agonia" />
+    <MESSAGE value="atualizei o nome" />
+    <option name="LAST_COMMIT_MESSAGE" value="atualizei o nome" />
   </component>
 </project>
