@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f56976cb-12b4-48ac-84ba-5c507dfa7d3f" name="Changes" comment="Adicionei todos os outros códigos para dentro de uma unica pasta">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="f56976cb-12b4-48ac-84ba-5c507dfa7d3f" name="Changes" comment="agonia" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -142,7 +140,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653511187961</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="agonia">
+      <created>1653521766991</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1653521766991</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -170,6 +175,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Adicionei todos os outros códigos para dentro de uma unica pasta" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adicionei todos os outros códigos para dentro de uma unica pasta" />
+    <MESSAGE value="agonia" />
+    <option name="LAST_COMMIT_MESSAGE" value="agonia" />
   </component>
 </project>
