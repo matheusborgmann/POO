@@ -1,18 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f56976cb-12b4-48ac-84ba-5c507dfa7d3f" name="Changes" comment="Adicionei todos os outros códigos para dentro de uma unica pasta">
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="f56976cb-12b4-48ac-84ba-5c507dfa7d3f" name="Changes" comment="atualizei o nome">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled.iml" beforeDir="false" afterPath="$PROJECT_DIR$/POO.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Merge.Settings">
+    <option name="BRANCH" value="origin/main" />
+  </component>
   <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="793652ca-cfd7-4018-baa7-84628090e191" />
+        <option name="url" value="https://github.com/matheusborgmann/POO.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -28,7 +48,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Matheus/Downloads/IntelliJ.Portuguese.Brazil.Dictionary-master/portuguese-brazil_without-accents.dic&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Matheus/IdeaProjects/POO&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
@@ -117,7 +137,49 @@
       <option name="project" value="LOCAL" />
       <updated>1653499958551</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Adicionei todos os outros códigos para dentro de uma unica pasta">
+      <created>1653500269003</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1653500269003</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Adicionei todos os outros códigos para dentro de uma unica pasta">
+      <created>1653511187961</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1653511187961</updated>
+    </task>
+    <task id="LOCAL-00004" summary="agonia">
+      <created>1653521766991</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1653521766991</updated>
+    </task>
+    <task id="LOCAL-00005" summary="agonia">
+      <created>1653521825375</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1653521825375</updated>
+    </task>
+    <task id="LOCAL-00006" summary="atualizei o nome">
+      <created>1653522127837</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1653522127837</updated>
+    </task>
+    <task id="LOCAL-00007" summary="atualizei o nome">
+      <created>1653522286494</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1653522286494</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -131,7 +193,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="HEAD" />
+                        <option value="Home" />
                       </list>
                     </value>
                   </entry>
@@ -145,6 +207,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Adicionei todos os outros códigos para dentro de uma unica pasta" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adicionei todos os outros códigos para dentro de uma unica pasta" />
+    <MESSAGE value="agonia" />
+    <MESSAGE value="atualizei o nome" />
+    <option name="LAST_COMMIT_MESSAGE" value="atualizei o nome" />
   </component>
 </project>
