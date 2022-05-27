@@ -54,5 +54,4 @@ public class Sistema {
         artista.removeAll(artista);
     }
 
-
 }
