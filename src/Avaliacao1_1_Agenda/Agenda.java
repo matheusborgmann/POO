@@ -14,11 +14,6 @@ public class Agenda {
         return agenda;
     }
 
-    public void setAgenda(ArrayList<Pessoa> agenda) {
-        this.agenda = agenda;
-    }
-
-
     @Override
     public String toString() {
         return "Agenda: " + agenda;
