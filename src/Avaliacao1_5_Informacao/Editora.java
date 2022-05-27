@@ -1,10 +1,36 @@
 package Avaliacao1_5_Informacao;
 
+
+import java.util.ArrayList;
+
 public class Editora {
 
+    private ArrayList<Livro> livros;
+    private ArrayList<Editora> editoras;
     private long id;
     private String nome;
     private String email;
+
+    public Editora(){
+        livros = new ArrayList<Livro>();
+        editoras = new ArrayList<Editora>();
+    }
+
+    public ArrayList<Livro> getLivros() {
+        return livros;
+    }
+
+    public void setLivros(ArrayList<Livro> livros) {
+        this.livros = livros;
+    }
+
+    public ArrayList<Editora> getEditoras() {
+        return editoras;
+    }
+
+    public void setEditoras(ArrayList<Editora> editoras) {
+        this.editoras = editoras;
+    }
 
     public long getId() {
         return id;
@@ -30,12 +56,90 @@ public class Editora {
         this.email = email;
     }
 
+    public void armazenarEditoras(Editora e1){
+        this.editoras.add(e1);
+    }
+    public void armazenarLivro(Livro l1) {
+        this.livros.add(l1);
+    }
+
+    public void compararId(){
+        for (int i = 0; i < livros.size(); i++){
+            Livro l = livros.get(i);
+            for (int j = 0; j < editoras.size(); j++) {
+                Editora e = editoras.get(j);
+                if (l.getIdEditora() == e.getId()) {
+                    editoras = (ArrayList<Editora>)editoras.clone();
+                }
+            }
+        }
+    } // talvez isso nao funcione
+
+    public void imprimirLivros(){
+        System.out.println(livros);
+    }
+
+    public void verPorAutor(String Autor) {
+        for (int i = 0; i < livros.size(); i++){
+            Livro l = livros.get(i);
+            if (l.getAutor().equals(Autor)){
+                System.out.println(l);
+            }
+        }
+    }
+
+    public void verEditoras(){
+        for (int i = 0; i < editoras.size(); i++){
+            Editora e = editoras.get(i);
+            System.out.println("Editora: " + e.getNome()+ " id: " + e.getId());
+        }
+    }
+
+    public void verPorEditora(int index ) {
+        for (int i = 0; i < livros.size(); i++){
+            Livro l = livros.get(i);
+            for (int j = 0; j < editoras.size(); j++) {
+                Editora e = editoras.get(j);
+                if (l.getIdEditora() == index){
+                    System.out.println(l);
+                }
+            }
+        }
+    } // talvez esteja errado aq
+
+    public void imprimeLivro(String livro) {
+      for (int i = 0; i < livros.size(); i++) {
+          Livro l = livros.get(i);
+          if (l.getTitulo().equals(livro)){
+          System.out.println(l);
+          }
+      }
+    }
+
+    public void verPorAnos(int ano){
+        for (int i = 0; i < livros.size(); i++) {
+            Livro l = livros.get(i);
+            if (l.getAno() == (ano)){
+                System.out.println(l);
+            }
+        }
+    }
+    public void removeLivro(String titulo){
+        for (int i = 0; i < livros.size(); i++){
+            Livro l = livros.get(i);
+            if(l.getTitulo().equals(titulo)){
+                System.out.println(l.getTitulo() + " Foi removido...");
+                livros.remove(l);
+            }
+        }
+    }
+
     @Override
     public String toString() {
         return "Editora{" +
-                "id=" + id +
-                ", nome='" + nome + '\'' +
-                ", email='" + email + '\'' +
+                "id=" + getId() +
+                ", nome='" + getNome() + '\'' +
+                ", email='" + getEmail() + '\'' +
                 '}';
     }
 }

@@ -15,16 +15,15 @@ public class Main {
             System.out.println("3 - Sai pessoa");
             System.out.println("4 - Sobe andar");
             System.out.println("5 - Desce andar");
-            System.out.println("0 - Finalizar ");
+            System.out.println("0 - Finalizar\n");
             op = sc.nextInt();
-            System.out.println("");
             switch (op) {
                 case 1:
                     e1.ElevadorNovo();
                     System.out.println("Digite a capacidade máxima de pessoas no elevador: ");
-                    e1.capElevador = sc.nextInt();
+                    e1.setCapElevador(sc.nextInt());
                     System.out.println("Digite a quantidade de andares do prédio: ");
-                    e1.capAndar = sc.nextInt();
+                    e1.setCapAndar(sc.nextInt());
                     break;
                 case 2:
                     e1.entra();
@@ -33,10 +32,12 @@ public class Main {
                     e1.removePerson();
                     break;
                 case 4:
-                    e1.upFloor();
+                    System.out.println("Para qual andar deseja subir?");
+                    e1.upFloor(sc.nextInt());
                     break;
                 case 5:
-                    e1.downFloor();
+                    System.out.println("Para qual andar deseja descer?");
+                    e1.downFloor(sc.nextInt());
                     break;
                 case 0:
                     System.out.println("Finalizando!");
@@ -45,7 +46,7 @@ public class Main {
                     System.out.println("Opção inválida!");
                     break;
             }
-        } while (op != 0);/**/
+        } while (op != 0);
         sc.close();
     }
 }
