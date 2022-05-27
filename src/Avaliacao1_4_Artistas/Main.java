@@ -15,6 +15,9 @@ public class Main {
         do {
             System.out.println("\n1 - Registrar artista");
             System.out.println("2 - Buscar artista por nome");
+            System.out.println("3 - Ver quantidade total de artistas");
+            System.out.println("4 - Ver todos artistas");
+            System.out.println("5 - Apagar todos artistas");
             System.out.println("0 - Sair\n");
             op = sc.nextInt();
             switch (op){
@@ -41,6 +44,24 @@ public class Main {
                     sc.nextLine();
                     nome = sc.nextLine();
                     s1.buscarPessoa(nome);
+                    break;
+                case 3:
+                    s1.quantidadeArtistas();
+                    break;
+                case 4:
+                    s1.verTodos();
+                    break;
+                case 5:
+                    String S;
+                    System.out.println("Tem certeza que deseja deletar todos?\nS para sim\tN para nao");
+                    sc.nextLine();
+                    S = sc.nextLine();
+                    if (S == "S" || S == "s") {
+                        System.out.println("Apagando todos artistas....");
+                        s1.apagarTodosArtistas();
+                    } else {
+                        break;
+                    }
                     break;
                 case 0:
                     System.out.println("desligando...");

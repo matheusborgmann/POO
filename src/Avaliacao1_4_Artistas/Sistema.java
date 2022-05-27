@@ -39,4 +39,20 @@ public class Sistema {
             }
         }
     }
+
+    public void quantidadeArtistas(){
+        System.out.println("O numero total de artistas é: " + artista.size());
+    }
+
+    public void verTodos() {
+        for (int i = 0; i < artista.size(); i++) {
+            Artistas a = artista.get(i);
+            System.out.println("Nome do artista: " + a.getNome() + " numero de albuns: " + a.getAlbuns());
+        }
+    }
+    public void apagarTodosArtistas() {
+        artista.removeAll(artista);
+    }
+
+
 }
