@@ -1,11 +1,10 @@
 package Avaliacao1_2_Elevador;
 
 
-import java.util.Scanner;
+
 
 public class Elevador {
 
-    Scanner sc = new Scanner(System.in);
 
     public int capElevador;
     public int capAndar;
@@ -53,52 +52,56 @@ public class Elevador {
         andar = 0;
     }
 
-    /*public void Inicializa() {
-
-
-    }*/
-
-    public int entra() {
+    public void entra() {
         if(pessoas == capElevador){
             System.out.println("Elevador cheio!");
         }else{
             pessoas++;
             System.out.println("Número de pessoas no elevador: " + pessoas);
         }
-        return pessoas;
     }
 
-    public int removePerson() {
+    public void removePerson() {
         if(pessoas == 0){
             System.out.println("Elevador vazio!");
         }else{
             pessoas--;
             System.out.println("Número de pessoas no elevador: " + pessoas);
         }
-
-        return pessoas;
     }
 
-    public int upFloor() {
-        if(andar == capAndar){
-            System.out.println("Este é o último andar!");
-        }else{
-            andar++;
-            System.out.println("Andar atual: " + andar);
-        }
-
-        return andar;
+    public void upFloor(int Andar) {
+        if (Andar > capAndar || andar < 0) {
+            System.out.println("Andar nao existe!");
+        } else{
+            if (Andar < andar) {
+                System.out.println("Voce esta descendo mas ok");
+            }
+            if(Andar == 0) {
+                System.out.println("Este e o terreo!");
+            } else if(Andar == capAndar){
+                System.out.println("Este e o ultimo andar!");
+            }
+                andar = Andar;
+                System.out.println("Andar atual: " + andar);
+            }
     }
 
-    public int downFloor() {
-        if(andar == 0){
-            System.out.println("Este é o térreo!");
+    public void downFloor(int Andar) {
+        if (Andar > capAndar || andar < 0){
+            System.out.println("Andar nao existe!");
         }else{
-            andar--;
+            if (Andar > andar) {
+                System.out.println("Voce esta subindo mas ok");
+            }
+            if(Andar == 0){
+                System.out.println("Este e o terreo!");
+            }else if(Andar == capAndar){
+                System.out.println("Este e o ultimo andar!");
+            }
+            andar = Andar;
             System.out.println("Andar atual: " + andar);
         }
-
-        return andar;
     }
 
 }
