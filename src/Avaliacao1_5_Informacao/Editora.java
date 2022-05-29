@@ -6,15 +6,10 @@ import java.util.ArrayList;
 public class Editora {
 
     private ArrayList<Livro> livros;
-    private ArrayList<Editora> editoras;
     private long id;
     private String nome;
     private String email;
-
-    public Editora(){
-        livros = new ArrayList<Livro>();
-        editoras = new ArrayList<Editora>();
-    }
+    private ArrayList<Editora> editoras;
 
     public ArrayList<Livro> getLivros() {
         return livros;
@@ -30,6 +25,11 @@ public class Editora {
 
     public void setEditoras(ArrayList<Editora> editoras) {
         this.editoras = editoras;
+    }
+
+    public Editora(){
+        livros = new ArrayList<Livro>();
+        editoras = new ArrayList<Editora>();
     }
 
     public long getId() {
@@ -63,35 +63,19 @@ public class Editora {
         this.livros.add(l1);
     }
 
-    public void compararId(){
-        for (int i = 0; i < livros.size(); i++){
-            Livro l = livros.get(i);
-            for (int j = 0; j < editoras.size(); j++) {
-                Editora e = editoras.get(j);
-                if (l.getIdEditora() == e.getId()) {
-                    editoras = (ArrayList<Editora>)editoras.clone();
-                }
-            }
-        }
-    } // talvez isso nao funcione
-
     public void imprimirLivros(){
         System.out.println(livros);
     }
 
+    public void imprimirEditoras(){
+        System.out.println(editoras);
+    }
     public void verPorAutor(String Autor) {
         for (int i = 0; i < livros.size(); i++){
             Livro l = livros.get(i);
             if (l.getAutor().equals(Autor)){
                 System.out.println(l);
             }
-        }
-    }
-
-    public void verEditoras(){
-        for (int i = 0; i < editoras.size(); i++){
-            Editora e = editoras.get(i);
-            System.out.println("Editora: " + e.getNome()+ " id: " + e.getId());
         }
     }
 
@@ -105,7 +89,7 @@ public class Editora {
                 }
             }
         }
-    } // talvez esteja errado aq
+    }
 
     public void imprimeLivro(String livro) {
       for (int i = 0; i < livros.size(); i++) {
@@ -136,10 +120,10 @@ public class Editora {
 
     @Override
     public String toString() {
-        return "Editora{" +
-                "id=" + getId() +
+        return "\nEditora{" +
                 ", nome='" + getNome() + '\'' +
                 ", email='" + getEmail() + '\'' +
+                "id=" + getId() +
                 '}';
     }
 }
