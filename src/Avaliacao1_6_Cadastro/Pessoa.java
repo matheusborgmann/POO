@@ -6,17 +6,26 @@ public class Pessoa {
     private char sexo;
     private Endereco end;
 
-    public String getNome() {
-        return nome;
-    }
 
     public Pessoa(){
 
     }
 
-    public Pessoa(String nome, int idade, char sexo){
-
+    public Pessoa(String nome, int idade, char sexo) {
+        this.nome = nome;
+        this.idade = idade;
+        this.sexo = sexo;
     }
+    public Pessoa(String nome, int idade, char sexo, Endereco end) {
+        this.nome = nome;
+        this.idade = idade;
+        this.sexo = sexo;
+        this.end = end;
+    }
+    public String getNome() {
+        return nome;
+    }
+
     public void setNome(String nome) {
         this.nome = nome;
     }
@@ -43,5 +52,11 @@ public class Pessoa {
 
     public void setEnd(Endereco end) {
         this.end = end;
+    }
+
+    @Override
+    public String toString() {
+        return "Pessoa{" + "nome=" + nome + ", idade="
+                + idade + ", sexo=" + sexo + ", end=" + end + '}';
     }
 }
