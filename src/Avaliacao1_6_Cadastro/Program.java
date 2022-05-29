@@ -56,4 +56,3 @@ public class Program {
         scString.close();
     }
 }
-
