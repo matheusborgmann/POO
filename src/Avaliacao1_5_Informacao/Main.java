@@ -14,7 +14,7 @@ public class Main {
 
         do {
             System.out.println("\nBem vindo a bookstore!\npor favor digite sua operacao:\n ");
-            System.out.println("1 - Registrar uma nova editora"); // arrumar
+            System.out.println("1 - Registrar uma nova editora");
             System.out.println("2 - Registrar novo livro");
             System.out.println("3 - Visualizar todos livros");
             System.out.println("4 - Visualizar livros por autor");
@@ -26,14 +26,16 @@ public class Main {
             op =sc.nextInt();
             switch (op){
                 case 1:
+                    Editora e2 = new Editora();
+
                     System.out.println("Digite o nome da editora: ");
                     sc.nextLine();
-                    e1.setNome(sc.nextLine());
+                    e2.setNome(sc.nextLine());
                     System.out.println("Digite o email da editora: ");
-                    e1.setEmail(sc.nextLine());
+                    e2.setEmail(sc.nextLine());
                     System.out.println("Digite a id da editora");
-                    e1.setId(sc.nextLong());
-                    e1.armazenarEditoras(e1);
+                    e2.setId(sc.nextLong());
+                    e1.armazenarEditoras(e2);
                     break;
                 case 2:
                     Livro l1 = new Livro();
@@ -47,7 +49,6 @@ public class Main {
                     System.out.println("Digite a id da editora do livro: ");
                     l1.setIdEditora(sc.nextInt());
                     e1.armazenarLivro(l1);
-                    e1.compararId();
                     break;
                 case 3:
                     e1.imprimirLivros();
@@ -62,9 +63,9 @@ public class Main {
                 case 5:
                     int editora;
                     System.out.println("Editoras Disponiveis: ");
-                    e1.verEditoras();
-                    System.out.println("Digite o id da editora: ");
-                    editora = sc.nextInt() - 1;
+                    e1.imprimirEditoras();
+                    System.out.println("\nDigite o id da editora: ");
+                    editora = sc.nextInt();
                     e1.verPorEditora(editora);
                     break;
                 case 6:
@@ -72,8 +73,11 @@ public class Main {
                     e1.verPorAnos(sc.nextInt());
                     break;
                 case 7:
+                    String titulo;
                     System.out.println("Digite o nome do livro: ");
-                    e1.imprimeLivro(sc.nextLine());
+                    sc.nextLine();
+                    titulo = sc.nextLine();
+                    e1.imprimeLivro(titulo);
                     break;
                 case 8:
                     String title;
