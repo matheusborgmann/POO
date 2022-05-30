@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f56976cb-12b4-48ac-84ba-5c507dfa7d3f" name="Changes" comment="Parte 5 ARRUMADA">
+    <list default="true" id="f56976cb-12b4-48ac-84ba-5c507dfa7d3f" name="Changes" comment=" Finalizada">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Avaliacao1_6_Cadastro/Endereco.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Avaliacao1_6_Cadastro/Endereco.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Avaliacao1_6_Cadastro/Pessoa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Avaliacao1_6_Cadastro/Pessoa.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Avaliacao1_6_Cadastro/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Avaliacao1_6_Cadastro/Program.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,10 +72,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Matheus\IdeaProjects\POO\src" />
       <recent name="C:\Users\Matheus\IdeaProjects\untitled\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Program">
+  <component name="RunManager" selected="Application.Avaliacao1_3_Studant.Main">
     <configuration name="Avaliacao1_1_Agenda.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Avaliacao1_1_Agenda.Main" />
       <module name="POO" />
@@ -105,12 +103,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Avaliacao1_4_Artistas.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Avaliacao1_4_Artistas.Main" />
+    <configuration name="Avaliacao1_3_Studant.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Avaliacao1_3_Studant.Main" />
       <module name="POO" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Avaliacao1_4_Artistas.*" />
+          <option name="PATTERN" value="Avaliacao1_3_Studant.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -146,11 +144,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Avaliacao1_3_Studant.Main" />
         <item itemvalue="Application.Program" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Avaliacao1_1_Agenda.Main" />
         <item itemvalue="Application.Avaliacao1_2_Elevador.Main" />
-        <item itemvalue="Application.Avaliacao1_4_Artistas.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -275,7 +273,21 @@
       <option name="project" value="LOCAL" />
       <updated>1653847340079</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary=" Finalizada">
+      <created>1653849595869</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1653849595869</updated>
+    </task>
+    <task id="LOCAL-00018" summary=" Finalizada">
+      <created>1653849641642</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1653849641642</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -311,7 +323,8 @@
     <MESSAGE value="Parte 3" />
     <MESSAGE value="Parte 5 bugada ainda na Editora" />
     <MESSAGE value="Parte 5 ARRUMADA" />
-    <option name="LAST_COMMIT_MESSAGE" value="Parte 5 ARRUMADA" />
+    <MESSAGE value=" Finalizada" />
+    <option name="LAST_COMMIT_MESSAGE" value=" Finalizada" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
