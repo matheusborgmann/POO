@@ -45,7 +45,10 @@ public class Sistema {
     public void verTodos() {
         for (int i = 0; i < artista.size(); i++) {
             Artistas a = artista.get(i);
-            System.out.println("Nome do artista: " + a.getNome() + "\tgenero musical: " + a.getGenero() + "\tinstrumento tocado: " + a.getInstrumento() + "\tnumero de albuns: " + a.getAlbuns());
+            System.out.println("Nome do artista: " + a.getNome() + 
+                               "\tgenero musical: " + a.getGenero() + 
+                               "\tinstrumento tocado: " + a.getInstrumento() + 
+                               "\tnumero de albuns: " + a.getAlbuns());
         }
     }
 
