@@ -31,7 +31,7 @@ public class Program {
             if (p1.getSexo() != 'M' && p1.getSexo() != 'F') {
                 System.out.println("Erro! Sexo Inválido!");
             }
-        } while (p1.getSexo() != 'M' && p1.getSexo() != 'F');
+        } while (p1.getSexo() != 'M' && p1.getSexo() != 'm' && p1.getSexo() != 'F' && p1.getSexo() != 'f');
 
         System.out.println("\nDigite o endereço: ");
         e1.setLogradouro(scString.nextLine());
