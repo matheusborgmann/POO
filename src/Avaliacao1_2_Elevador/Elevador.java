@@ -103,5 +103,4 @@ public class Elevador {
             System.out.println("Andar atual: " + andar);
         }
     }
-
 }
