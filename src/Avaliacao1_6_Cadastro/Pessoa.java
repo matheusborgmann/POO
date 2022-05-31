@@ -6,8 +6,7 @@ public class Pessoa {
     private char sexo;
     private Endereco end;
 
-
-    public Pessoa(){
+    public Pessoa() {
 
     }
 
@@ -16,12 +15,14 @@ public class Pessoa {
         this.idade = idade;
         this.sexo = sexo;
     }
+
     public Pessoa(String nome, int idade, char sexo, Endereco end) {
         this.nome = nome;
         this.idade = idade;
         this.sexo = sexo;
         this.end = end;
     }
+
     public String getNome() {
         return nome;
     }

@@ -23,8 +23,8 @@ public class Main {
             System.out.println("7 - Procurar livro por titulo");
             System.out.println("8 - Remover um livro");
             System.out.println("0 - Sair\n");
-            op =sc.nextInt();
-            switch (op){
+            op = sc.nextInt();
+            switch (op) {
                 case 1:
                     Editora e2 = new Editora();
 
@@ -94,7 +94,7 @@ public class Main {
                     break;
             }
 
-        }while (op != 0);
+        } while (op != 0);
         sc.close();
     }
 }

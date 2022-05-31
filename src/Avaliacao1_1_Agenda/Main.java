@@ -21,12 +21,12 @@ public class Main {
             System.out.println("5 - Remove Pessoa");
             System.out.println("0 - Desligar programa\n");
             op = sc.nextInt();
-            switch (op){
+            switch (op) {
                 case 0:
                     System.out.println("Terminando execução do programa....");
                     break;
                 case 1:
-                    if(limite < 10) {
+                    if (limite < 10) {
                         Pessoa p1 = new Pessoa();
                         System.out.println("Digite o nome da pessoa: ");
                         sc.nextLine();
@@ -63,9 +63,9 @@ public class Main {
                     a1.buscarPessoa(pessoa);
                     break;
                 case 3:
-                    if(a1.getAgenda().isEmpty()) {
+                    if (a1.getAgenda().isEmpty()) {
                         System.out.println("Não há contatos");
-                    }else {
+                    } else {
                         System.out.println(a1);
                     }
                     break;
