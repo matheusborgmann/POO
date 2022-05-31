@@ -23,26 +23,26 @@ public class Agenda {
         this.agenda.add(p1);
     }
 
-    public void removePessoa(String nome){
-        for (int i = 0; i < agenda.size(); i++){
+    public void removePessoa(String nome) {
+        for (int i = 0; i < agenda.size(); i++) {
             Pessoa p = agenda.get(i);
-            if(p.getNome().equals(nome)){
+            if (p.getNome().equals(nome)) {
                 agenda.remove(p);
             }
         }
     }
 
-    public void buscarPessoa(String nome){
-        for (int i = 0; i < agenda.size(); i++){
+    public void buscarPessoa(String nome) {
+        for (int i = 0; i < agenda.size(); i++) {
             Pessoa p = agenda.get(i);
-            if(p.getNome().equals(nome)){
+            if (p.getNome().equals(nome)) {
                 System.out.println(nome + " está na posição: " + i);
             }
         }
     }
 
-    public void imprimePessoa(int index){
-            Pessoa p = agenda.get(index);
+    public void imprimePessoa(int index) {
+        Pessoa p = agenda.get(index);
         System.out.println(p);
     }
 

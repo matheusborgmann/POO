@@ -1,14 +1,12 @@
 package Avaliacao1_4_Artistas;
 
-import Avaliacao1_1_Agenda.Pessoa;
-
 import java.util.ArrayList;
 
 public class Sistema {
 
     private ArrayList<Artistas> artista;
 
-    public Sistema () {
+    public Sistema() {
         artista = new ArrayList<Artistas>();
     }
 
@@ -40,18 +38,18 @@ public class Sistema {
         }
     }
 
-    public void quantidadeArtistas(){
+    public void quantidadeArtistas() {
         System.out.println("O numero total de artistas é: " + artista.size());
     }
 
     public void verTodos() {
         for (int i = 0; i < artista.size(); i++) {
             Artistas a = artista.get(i);
-            System.out.println("Nome do artista: " + a.getNome() + " numero de albuns: " + a.getAlbuns());
+            System.out.println("Nome do artista: " + a.getNome() + "\tgenero musical: " + a.getGenero() + "\tinstrumento tocado: " + a.getInstrumento() + "\tnumero de albuns: " + a.getAlbuns());
         }
     }
+
     public void apagarTodosArtistas() {
         artista.removeAll(artista);
     }
-
 }

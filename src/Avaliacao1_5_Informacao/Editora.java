@@ -1,6 +1,5 @@
 package Avaliacao1_5_Informacao;
 
-
 import java.util.ArrayList;
 
 public class Editora {
@@ -27,7 +26,7 @@ public class Editora {
         this.editoras = editoras;
     }
 
-    public Editora(){
+    public Editora() {
         livros = new ArrayList<Livro>();
         editoras = new ArrayList<Editora>();
     }
@@ -56,35 +55,37 @@ public class Editora {
         this.email = email;
     }
 
-    public void armazenarEditoras(Editora e1){
+    public void armazenarEditoras(Editora e1) {
         this.editoras.add(e1);
     }
+
     public void armazenarLivro(Livro l1) {
         this.livros.add(l1);
     }
 
-    public void imprimirLivros(){
+    public void imprimirLivros() {
         System.out.println(livros);
     }
 
-    public void imprimirEditoras(){
+    public void imprimirEditoras() {
         System.out.println(editoras);
     }
+
     public void verPorAutor(String Autor) {
-        for (int i = 0; i < livros.size(); i++){
+        for (int i = 0; i < livros.size(); i++) {
             Livro l = livros.get(i);
-            if (l.getAutor().equals(Autor)){
+            if (l.getAutor().equals(Autor)) {
                 System.out.println(l);
             }
         }
     }
 
-    public void verPorEditora(int index ) {
-        for (int i = 0; i < livros.size(); i++){
+    public void verPorEditora(int index) {
+        for (int i = 0; i < livros.size(); i++) {
             Livro l = livros.get(i);
             for (int j = 0; j < editoras.size(); j++) {
                 Editora e = editoras.get(j);
-                if (l.getIdEditora() == index){
+                if (l.getIdEditora() == index) {
                     System.out.println(l);
                 }
             }
@@ -92,26 +93,27 @@ public class Editora {
     }
 
     public void imprimeLivro(String livro) {
-      for (int i = 0; i < livros.size(); i++) {
-          Livro l = livros.get(i);
-          if (l.getTitulo().equals(livro)){
-          System.out.println(l);
-          }
-      }
-    }
-
-    public void verPorAnos(int ano){
         for (int i = 0; i < livros.size(); i++) {
             Livro l = livros.get(i);
-            if (l.getAno() == (ano)){
+            if (l.getTitulo().equals(livro)) {
                 System.out.println(l);
             }
         }
     }
-    public void removeLivro(String titulo){
-        for (int i = 0; i < livros.size(); i++){
+
+    public void verPorAnos(int ano) {
+        for (int i = 0; i < livros.size(); i++) {
             Livro l = livros.get(i);
-            if(l.getTitulo().equals(titulo)){
+            if (l.getAno() == (ano)) {
+                System.out.println(l);
+            }
+        }
+    }
+
+    public void removeLivro(String titulo) {
+        for (int i = 0; i < livros.size(); i++) {
+            Livro l = livros.get(i);
+            if (l.getTitulo().equals(titulo)) {
                 System.out.println(l.getTitulo() + " Foi removido...");
                 livros.remove(l);
             }

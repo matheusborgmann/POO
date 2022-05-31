@@ -41,10 +41,10 @@ public class Artistas {
     @Override
     public String toString() {
         return "Artistas{" +
-                "nome='" + nome + '\'' +
-                ", genero='" + genero + '\'' +
-                ", instrumento='" + instrumento + '\'' +
-                ", albuns=" + albuns +
+                "nome='" + this.nome + '\'' +
+                ", genero='" + this.genero + '\'' +
+                ", instrumento='" + this.instrumento + '\'' +
+                ", albuns=" + this.albuns +
                 '}';
     }
 }

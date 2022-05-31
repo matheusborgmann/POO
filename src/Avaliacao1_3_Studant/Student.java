@@ -13,7 +13,6 @@ public class Student {
         this.nota1 = n1;
         this.nota2 = n2;
         this.nota3 = nota3;
-
     }
 
     public void setNota1(float nota1) {

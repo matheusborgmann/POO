@@ -1,7 +1,5 @@
 package Avaliacao1_4_Artistas;
 
-import Avaliacao1_1_Agenda.Pessoa;
-
 import java.util.Scanner;
 
 public class Main {
@@ -20,7 +18,7 @@ public class Main {
             System.out.println("5 - Apagar todos artistas");
             System.out.println("0 - Sair\n");
             op = sc.nextInt();
-            switch (op){
+            switch (op) {
                 case 1:
                     Artistas a1 = new Artistas();
                     System.out.println("Digite o nome do artista: ");
@@ -39,28 +37,44 @@ public class Main {
                     s1.armazenarPessoa(a1);
                     break;
                 case 2:
-                    String nome;
-                    System.out.println("Digite o nome do artista que deseja buscar: ");
-                    sc.nextLine();
-                    nome = sc.nextLine();
-                    s1.buscarPessoa(nome);
+                    if (s1.getArtista().isEmpty()) {
+                        System.out.println("Nenhum artista registrado...");
+                    } else {
+                        String nome;
+                        System.out.println("Digite o nome do artista que deseja buscar: ");
+                        sc.nextLine();
+                        nome = sc.nextLine();
+                        s1.buscarPessoa(nome);
+                    }
                     break;
                 case 3:
-                    s1.quantidadeArtistas();
+                    if (s1.getArtista().isEmpty()) {
+                        System.out.println("Nenhum artista registrado...");
+                    } else {
+                        s1.quantidadeArtistas();
+                    }
                     break;
                 case 4:
-                    s1.verTodos();
+                    if (s1.getArtista().isEmpty()) {
+                        System.out.println("Nenhum artista registrado...");
+                    } else {
+                        s1.verTodos();
+                    }
                     break;
                 case 5:
-                    String S;
-                    System.out.println("Tem certeza que deseja deletar todos?\nS para sim\tN para nao");
-                    sc.nextLine();
-                    S = sc.nextLine();
-                    if (S == "S" || S == "s") {
-                        System.out.println("Apagando todos artistas....");
-                        s1.apagarTodosArtistas();
+                    if (s1.getArtista().isEmpty()) {
+                        System.out.println("Lista ja esta vazia");
                     } else {
-                        break;
+                        String S;
+                        System.out.println("Tem certeza que deseja deletar todos?\nS para sim\tN para nao");
+                        sc.nextLine();
+                        S = sc.nextLine();
+                        if (S.equals("S") || S.equals("s")) {
+                            System.out.println("Apagando todos artistas....");
+                            s1.apagarTodosArtistas();
+                        } else {
+                            break;
+                        }
                     }
                     break;
                 case 0:
@@ -71,7 +85,7 @@ public class Main {
                     break;
             }
 
-        }while (op != 0);
+        } while (op != 0);
 
         sc.close();
     }
