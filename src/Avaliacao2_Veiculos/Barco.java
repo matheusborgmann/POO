@@ -18,15 +18,16 @@ public class Barco extends Veiculo {
 
     @Override
     public void mostrarDetalhes() {
-        System.out.println("O barco" + getNome()
-                + "de " + getAnoFabricacao()
-                + ", produzido por " + getFabricante()
-                + " de capacidade de " + getCapacidade() + " de pessoas"
-                + "possui " + getNumVelas() + "velas!");
+        System.out.println("O barco " + getNome()
+                + ", produzido no ano de " + getAnoFabricacao()
+                + ", pela empresa '" + getNomeFab()
+                + " (" + getPaisDeOrig() + ")"
+                + "', possui a capacidade de " + getCapacidade() + " pessoas."
+                + " O barco possui " + getNumVelas() + " velas!");
     }
 
     public void icarVelas(){
-        System.out.println("O barco está com as velas içadas.");
+        System.out.println("O barco esta com as velas icadas.");
     }
 
     public void recolherVelas(){
