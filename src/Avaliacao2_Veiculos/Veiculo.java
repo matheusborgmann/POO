@@ -3,7 +3,8 @@ package Avaliacao2_Veiculos;
 public abstract class Veiculo {
 
     protected String nome;
-    protected Fabricante fabricante;
+    protected String nomeFab;
+    protected String paisDeOrig;
     protected int anoFabricacao;
     protected int capacidade;
 
@@ -15,12 +16,20 @@ public abstract class Veiculo {
         this.nome = nome;
     }
 
-    public Fabricante getFabricante() {
-        return fabricante;
+    public String getNomeFab() {
+        return nomeFab;
     }
 
-    public void setFabricante(Fabricante fabricante) {
-        this.fabricante = fabricante;
+    public void setNomeFab(String nomeFab) {
+        this.nomeFab = nomeFab;
+    }
+
+    public String getPaisDeOrig() {
+        return paisDeOrig;
+    }
+
+    public void setPaisDeOrig(String paisDeOrig) {
+        this.paisDeOrig = paisDeOrig;
     }
 
     public int getAnoFabricacao() {

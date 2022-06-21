@@ -17,14 +17,15 @@ public class Automovel extends Veiculo {
 
     @Override
     public void acelerar() {
-        System.out.println("O automóvel acelerou.");
+        System.out.println("O automovel acelerou.");
     }
 
     @Override
     public void mostrarDetalhes() {
-        System.out.println("O automovel" + getNome() + " de " + getAnoFabricacao()
-                + ", produzido por " + fabricante.getNome() + "(" + fabricante.getPaisDeOrigem() + ")"
-                + "de capacidade de " + getCapacidade() + " de pessoas"
-                + " possui " + getDiametroRoda() + "velas!");
+        System.out.println("O automovel " + getNome() + ", produzido no ano de " + getAnoFabricacao()
+                + ", pela empresa '" + getNomeFab()
+                + " (" + getPaisDeOrig() + ")"
+                + "', possui a capacidade de " + getCapacidade() + " pessoas."
+                + " Suas rodas possuem o diametro de " + getDiametroRoda() + " centimetros!");
     }
 }
