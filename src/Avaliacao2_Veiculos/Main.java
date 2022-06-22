@@ -38,11 +38,12 @@ public class Main {
                                 auto.setNome(sc.nextLine());
                                 System.out.println("Digite o ano de fabricacao do automovel: ");
                                 auto.setAnoFabricacao(sc.nextInt());
-                                System.out.println("Qual o nome da empresa fabricante: ");
+                                System.out.println("96 Qual o nome da empresa fabricante: ");
                                 sc.nextLine();
-                                auto.setNomeFab(sc.nextLine());
-                                System.out.println("Pais de origem da " + auto.getNomeFab() + ":");
-                                auto.setPaisDeOrig(sc.nextLine());
+                                car.setNome(sc.nextLine());
+                                System.out.println("96 Pais de origem da " + car.getNome() + ":");
+                                car.setPaisDeOrigem(sc.nextLine());
+                                auto.setFabricante(car);
                                 System.out.println("Digite a capacidade de pessoas do automovel: ");
                                 auto.setCapacidade(sc.nextInt());
                                 System.out.println("Qual o diametro da roda: ");
@@ -50,16 +51,18 @@ public class Main {
                                 auto.mostrarDetalhes();
                                 break;
                             case 2:
-                                System.out.println("Digite o nome do veiculo: ");
+                                Fabricante plane = new Fabricante();
+                                System.out.println("Digite o nome do aviao: ");
                                 sc.nextLine();
                                 aviao.setNome(sc.nextLine());
                                 System.out.println("Digite o ano de fabricacao do aviao: ");
                                 aviao.setAnoFabricacao(sc.nextInt());
-                                System.out.println("Qual o nome da empresa fabricante: ");
+                                System.out.println("96 Qual o nome da empresa fabricante: ");
                                 sc.nextLine();
-                                aviao.setNomeFab(sc.nextLine());
-                                System.out.println("Pais de origem da " + aviao.getNomeFab() + ":");
-                                aviao.setPaisDeOrig(sc.nextLine());
+                                plane.setNome(sc.nextLine());
+                                System.out.println("96 Pais de origem da " + plane.getNome() + ":");
+                                plane.setPaisDeOrigem(sc.nextLine());
+                                aviao.setFabricante(plane);
                                 System.out.println("Digite a capacidade de pessoas do aviao: ");
                                 aviao.setCapacidade(sc.nextInt());
                                 System.out.println("Numero de turbinas: ");
@@ -68,16 +71,18 @@ public class Main {
 
                                 break;
                             case 3:
-                                System.out.println("Digite o nome do veiculo: ");
+                                Fabricante boat = new Fabricante();
+                                System.out.println("Digite o nome do barco: ");
                                 sc.nextLine();
                                 barco.setNome(sc.nextLine());
                                 System.out.println("Digite o ano de fabricacao do barco: ");
                                 barco.setAnoFabricacao(sc.nextInt());
-                                System.out.println("Qual o nome da empresa fabricante: ");
+                                System.out.println("96 Qual o nome da empresa fabricante: ");
                                 sc.nextLine();
-                                barco.setNomeFab(sc.nextLine());
-                                System.out.println("Pais de origem da " + barco.getNomeFab() + ":");
-                                barco.setPaisDeOrig(sc.nextLine());
+                                boat.setNome(sc.nextLine());
+                                System.out.println("96 Pais de origem da " + boat.getNome() + ":");
+                                boat.setPaisDeOrigem(sc.nextLine());
+                                barco.setFabricante(boat);
                                 System.out.println("Digite a capacidade de pessoas do barco: ");
                                 barco.setCapacidade(sc.nextInt());
                                 System.out.println("Numero de velas: ");
