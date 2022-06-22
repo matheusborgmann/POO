@@ -5,6 +5,11 @@ public class Fabricante {
     private String nome;
     private String paisDeOrigem;
 
+    public Fabricante(String nome, String paisDeOrigem) {
+        this.nome = nome;
+        this.paisDeOrigem = paisDeOrigem;
+    }
+
     public String getNome() {
         return nome;
     }

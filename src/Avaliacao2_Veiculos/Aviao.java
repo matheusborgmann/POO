@@ -4,6 +4,11 @@ public class Aviao extends Veiculo {
 
     private int numTurbinas;
 
+    public Aviao(String nome, int anoFabricacao, int capacidade, String nomeFab, String paisDeOrig, int numTurbinas) {
+        super(nome, anoFabricacao, capacidade, nomeFab, paisDeOrig);
+        this.numTurbinas = numTurbinas;
+    }
+
     public int getNumTurbinas() {
         return numTurbinas;
     }

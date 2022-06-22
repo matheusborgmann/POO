@@ -1,18 +1,22 @@
 package Avaliacao2_Veiculos;
 
+import java.util.ArrayList;
+
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        Automovel auto = new Automovel();
-        Automovel auto2 = new Automovel();
-        Aviao aviao = new Aviao();
-        Aviao aviao2 = new Aviao();
-        Barco barco = new Barco();
-        Barco barco2 = new Barco();
+        ArrayList<Automovel> auto = new ArrayList<>();
+        ArrayList<Aviao> aviao = new ArrayList<>();
+        ArrayList<Barco> barco = new ArrayList<>();
 
+        String nome;
+        String nomeFab;
+        String pais;
+        int anoFabricacao;
+        int capacidade;
         int opc, opt;
         do {
 
@@ -32,63 +36,76 @@ public class Main {
                         opt = sc.nextInt();
                         switch (opt) {
                             case 1:
-                                Fabricante car = new Fabricante();
+
+                                int diametro;
+
                                 System.out.println("Digite o nome do automovel: ");
                                 sc.nextLine();
-                                auto.setNome(sc.nextLine());
+                                nome = sc.nextLine();
                                 System.out.println("Digite o ano de fabricacao do automovel: ");
-                                auto.setAnoFabricacao(sc.nextInt());
-                                System.out.println("96 Qual o nome da empresa fabricante: ");
-                                sc.nextLine();
-                                car.setNome(sc.nextLine());
-                                System.out.println("96 Pais de origem da " + car.getNome() + ":");
-                                car.setPaisDeOrigem(sc.nextLine());
-                                auto.setFabricante(car);
+                                anoFabricacao = sc.nextInt();
                                 System.out.println("Digite a capacidade de pessoas do automovel: ");
-                                auto.setCapacidade(sc.nextInt());
+                                capacidade = sc.nextInt();
+                                sc.nextLine();
+                                System.out.println("Qual o nome da empresa fabricante: ");
+                                nomeFab = sc.nextLine();
+                                System.out.println("Pais de origem da " + nomeFab + ":");
+                                pais = sc.nextLine();
                                 System.out.println("Qual o diametro da roda: ");
-                                auto.setDiametroRoda(sc.nextInt());
-                                auto.mostrarDetalhes();
-                                break;
-                            case 2:
-                                Fabricante plane = new Fabricante();
-                                System.out.println("Digite o nome do aviao: ");
-                                sc.nextLine();
-                                aviao.setNome(sc.nextLine());
-                                System.out.println("Digite o ano de fabricacao do aviao: ");
-                                aviao.setAnoFabricacao(sc.nextInt());
-                                System.out.println("96 Qual o nome da empresa fabricante: ");
-                                sc.nextLine();
-                                plane.setNome(sc.nextLine());
-                                System.out.println("96 Pais de origem da " + plane.getNome() + ":");
-                                plane.setPaisDeOrigem(sc.nextLine());
-                                aviao.setFabricante(plane);
-                                System.out.println("Digite a capacidade de pessoas do aviao: ");
-                                aviao.setCapacidade(sc.nextInt());
-                                System.out.println("Numero de turbinas: ");
-                                aviao.setNumTurbinas(sc.nextInt());
-                                aviao.mostrarDetalhes();
+                                diametro = sc.nextInt();
+                                auto.add(new Automovel(nome, anoFabricacao, capacidade, nomeFab, pais, diametro));
+
+                                for (int i = 0; i < auto.size(); i++) {
+                                    Automovel a = auto.get(i);
+                                    if (a.getNome().equals(nome)) {
+                                        a.mostrarDetalhes();
+                                    }
+                                }
+                                    break;
+                                case 2:
+
+                                    int turbinas;
+
+                                    System.out.println("Digite o nome do aviao: ");
+                                    sc.nextLine();
+                                    nome = sc.nextLine();
+                                    System.out.println("Digite o ano de fabricacao do aviao: ");
+                                    anoFabricacao = sc.nextInt();
+                                    System.out.println("Digite a capacidade de pessoas do aviao: ");
+                                    capacidade = sc.nextInt();
+                                    sc.nextLine();
+                                    System.out.println("Qual o nome da empresa fabricante: ");
+                                    nomeFab = sc.nextLine();
+                                    System.out.println("Pais de origem da " + nomeFab + ":");
+                                    pais = sc.nextLine();
+                                    System.out.println("Digite a quantidade de turbinas: ");
+                                    turbinas = sc.nextInt();
+
+                                    aviao.add(new Aviao(nome, anoFabricacao, capacidade, nomeFab, pais, turbinas));
 
                                 break;
                             case 3:
-                                Fabricante boat = new Fabricante();
+
+                                int velas;
+
                                 System.out.println("Digite o nome do barco: ");
                                 sc.nextLine();
-                                barco.setNome(sc.nextLine());
+                                nome = sc.nextLine();
                                 System.out.println("Digite o ano de fabricacao do barco: ");
-                                barco.setAnoFabricacao(sc.nextInt());
-                                System.out.println("96 Qual o nome da empresa fabricante: ");
-                                sc.nextLine();
-                                boat.setNome(sc.nextLine());
-                                System.out.println("96 Pais de origem da " + boat.getNome() + ":");
-                                boat.setPaisDeOrigem(sc.nextLine());
-                                barco.setFabricante(boat);
+                                anoFabricacao = sc.nextInt();
                                 System.out.println("Digite a capacidade de pessoas do barco: ");
-                                barco.setCapacidade(sc.nextInt());
-                                System.out.println("Numero de velas: ");
-                                barco.setNumVelas(sc.nextInt());
-                                barco.mostrarDetalhes();
+                                capacidade = sc.nextInt();
+                                sc.nextLine();
+                                System.out.println("Qual o nome da empresa fabricante: ");
+                                nomeFab = sc.nextLine();
+                                System.out.println("Pais de origem da " + nomeFab + ":");
+                                pais = sc.nextLine();
+                                System.out.println("Digite a quantidade de velas: ");
+                                velas = sc.nextInt();
+
+                                barco.add(new Barco(nome, anoFabricacao, capacidade, nomeFab, pais, velas));
                                 break;
+
                             case 0:
                                 System.out.println("Retornando ao menu...");
                                 break;
@@ -108,94 +125,120 @@ public class Main {
                         opt = sc.nextInt();
                         switch (opt) {
                             case 1:
-                                do {
-                                    System.out.println("""
-                                            1 - Acelerar automovel
-                                            2 - Abrir porta-malas
-                                            3 - Mostrar detalhes do automovel
-                                            0 - Retornar para o menu principal""");
-                                    opt = sc.nextInt();
-                                    switch (opt) {
-                                        case 1:
-                                            auto.acelerar();
-                                            break;
-                                        case 2:
-                                            auto.abrirPortaMalas();
-                                            break;
-                                        case 3:
-                                            auto.mostrarDetalhes();
-                                            break;
-                                        case 0:
-                                            System.out.println("retornando...");
-                                            break;
-                                        default:
-                                            System.out.println("Opcao invalida");
-                                            break;
+                                String autoNome;
+                                System.out.println("Digite o nome do automovel que deseja utilizar: ");
+                                sc.nextLine();
+                                autoNome = sc.nextLine();
+                                for (int i = 0; i < auto.size(); i++) {
+                                    Automovel a = auto.get(i);
+                                    if (auto.get(i).getNome().equals(autoNome)) {
+                                        do {
+                                            System.out.println("""
+                                                    1 - Acelerar automovel
+                                                    2 - Abrir porta-malas
+                                                    3 - Mostrar detalhes do automovel
+                                                    0 - Retornar para o menu principal""");
+                                            opt = sc.nextInt();
+                                            switch (opt) {
+                                                case 1:
+                                                    a.acelerar();
+                                                    break;
+                                                case 2:
+                                                    a.abrirPortaMalas();
+                                                    break;
+                                                case 3:
+                                                    a.mostrarDetalhes();
+                                                    break;
+                                                case 0:
+                                                    System.out.println("retornando...");
+                                                    break;
+                                                default:
+                                                    System.out.println("Opcao invalida");
+                                                    break;
+                                            }
+                                        } while (opt != 0);
+                                        break;
                                     }
-                                } while (opt != 0);
-
+                                }
                                 break;
                             case 2:
-                                do {
-                                    System.out.println("1 - Acelerar aviao" +
-                                            "\n2 - Decolar aviao" +
-                                            "\n3 - Pousar aviao" +
-                                            "\n4 - Mostrar detalhes do aviao" +
-                                            "\n0 - Retornar para o menu principal");
-                                    opt = sc.nextInt();
-                                    switch (opt) {
-                                        case 1:
-                                            aviao.acelerar();
-                                            break;
-                                        case 2:
-                                            aviao.decolar();
-                                            break;
-                                        case 3:
-                                            aviao.pousar();
-                                            break;
-                                        case 4:
-                                            aviao.mostrarDetalhes();
-                                            break;
-                                        case 0:
-                                            System.out.println("retornando...");
-                                            break;
-                                        default:
-                                            System.out.println("Opcao invalida");
-                                            break;
+                                String aviaoNome;
+                                System.out.println("Digite o nome do aviao que deseja utilizar: ");
+                                sc.nextLine();
+                                aviaoNome = sc.nextLine();
+                                for (int i = 0; i < aviao.size(); i++) {
+                                    Aviao a = aviao.get(i);
+                                    if (aviao.get(i).getNome().equals(aviaoNome)) {
+                                        do {
+                                            System.out.println("1 - Acelerar aviao" +
+                                                    "\n2 - Decolar aviao" +
+                                                    "\n3 - Pousar aviao" +
+                                                    "\n4 - Mostrar detalhes do aviao" +
+                                                    "\n0 - Retornar para o menu principal");
+                                            opt = sc.nextInt();
+                                            switch (opt) {
+                                                case 1:
+                                                    a.acelerar();
+                                                    break;
+                                                case 2:
+                                                    a.decolar();
+                                                    break;
+                                                case 3:
+                                                    a.pousar();
+                                                    break;
+                                                case 4:
+                                                    a.mostrarDetalhes();
+                                                    break;
+                                                case 0:
+                                                    System.out.println("retornando...");
+                                                    break;
+                                                default:
+                                                    System.out.println("Opcao invalida");
+                                                    break;
+                                            }
+                                        } while (opt != 0);
+                                        break;
                                     }
-                                } while (opt != 0);
-
-                                break;
+                                }
+                                    break;
                             case 3:
-                                do {
-                                    System.out.println("1 - Icar velas" +
-                                            "\n2 - Recolher velas" +
-                                            "\n3 - Acelerar barco" +
-                                            "\n4 - Mostrar detalhes do barco" +
-                                            "\n0 - Retornar para o menu principal");
-                                    opt = sc.nextInt();
-                                    switch (opt) {
-                                        case 1:
-                                            barco.icarVelas();
-                                            break;
-                                        case 2:
-                                            barco.recolherVelas();
-                                            break;
-                                        case 3:
-                                            barco.acelerar();
-                                            break;
-                                        case 4:
-                                            barco.mostrarDetalhes();
-                                            break;
-                                        case 0:
-                                            System.out.println("retornando...");
-                                            break;
-                                        default:
-                                            System.out.println("Opcao invalida");
-                                            break;
+                                String barcoNome;
+                                System.out.println("Digite o nome do barco que deseja utilizar: ");
+                                sc.nextLine();
+                                barcoNome = sc.nextLine();
+                                for (int i = 0; i < barco.size(); i++) {
+                                    Barco b = barco.get(i);
+                                    if (barco.get(i).getNome().equals(barcoNome)) {
+                                        do {
+                                            System.out.println("1 - Icar velas" +
+                                                    "\n2 - Recolher velas" +
+                                                    "\n3 - Acelerar barco" +
+                                                    "\n4 - Mostrar detalhes do barco" +
+                                                    "\n0 - Retornar para o menu principal");
+                                            opt = sc.nextInt();
+                                            switch (opt) {
+                                                case 1:
+                                                    b.icarVelas();
+                                                    break;
+                                                case 2:
+                                                    b.recolherVelas();
+                                                    break;
+                                                case 3:
+                                                    b.acelerar();
+                                                    break;
+                                                case 4:
+                                                    b.mostrarDetalhes();
+                                                    break;
+                                                case 0:
+                                                    System.out.println("retornando...");
+                                                    break;
+                                                default:
+                                                    System.out.println("Opcao invalida");
+                                                    break;
+                                            }
+                                        } while (opt != 0);
                                     }
-                                } while (opt != 0);
-
+                                }
                                 break;
                             case 0:
                                 System.out.println("Retornando ao menu principal....");
@@ -214,7 +257,6 @@ public class Main {
                     break;
             }
         } while (opc != 0);
-
         sc.close();
     }
 }

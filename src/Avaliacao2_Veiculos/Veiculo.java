@@ -5,27 +5,32 @@ import java.util.ArrayList;
 public abstract class Veiculo {
 
     protected String nome;
+    /*protected Fabricante fabricante;*/
+    protected String nomeFab;
+    protected String paisDeOrig;
 
-    protected int anoFabricacao;
-    protected int capacidade;
-    protected Fabricante fabricante;
-
-    protected ArrayList<Barco> barcos;
-
-    public ArrayList<Barco> getBarcos() {
-        return barcos;
+    public Veiculo(String nome, int anoFabricacao, int capacidade, String nomeFab, String paisDeOrig) {
+        this.nome = nome;
+        this.anoFabricacao = anoFabricacao;
+        this.capacidade = capacidade;
+        this.nomeFab = nomeFab;
+        this.paisDeOrig = paisDeOrig;
     }
 
-    public void setBarcos(ArrayList<Barco> barcos) {
-        this.barcos = barcos;
+    public String getNomeFab() {
+        return nomeFab;
     }
 
-    public Veiculo(){
-        barcos = new ArrayList<Barco>();
+    public void setNomeFab(String nomeFab) {
+        this.nomeFab = nomeFab;
     }
 
-    public void setFabricante(Fabricante fabricante) {
-        this.fabricante = fabricante;
+    public String getPaisDeOrig() {
+        return paisDeOrig;
+    }
+
+    public void setPaisDeOrig(String paisDeOrig) {
+        this.paisDeOrig = paisDeOrig;
     }
 
     public String getNome() {

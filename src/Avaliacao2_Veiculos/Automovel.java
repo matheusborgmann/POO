@@ -3,6 +3,11 @@ package Avaliacao2_Veiculos;
 public class Automovel extends Veiculo {
     private int diametroRoda;
 
+    public Automovel(String nome, int anoFabricacao, int capacidade, String nomeFab, String paisDeOrig, int diametroRoda) {
+        super(nome, anoFabricacao, capacidade, nomeFab, paisDeOrig);
+        this.diametroRoda = diametroRoda;
+    }
+
     public int getDiametroRoda() {
         return diametroRoda;
     }
@@ -22,9 +27,10 @@ public class Automovel extends Veiculo {
 
     @Override
     public void mostrarDetalhes() {
-        System.out.println("O automovel " + getNome() + ", produzido no ano de " + getAnoFabricacao()
-                + ", pela empresa '" + fabricante
-                + "', possui a capacidade de " + getCapacidade() + " pessoas."
-                + " Suas rodas possuem o diametro de " + getDiametroRoda() + " centimetros!");
-    }
-}
+                System.out.println("O automovel " + getNome() + ", produzido no ano de " + getAnoFabricacao()
+                        + ", pela empresa '" + getNomeFab()
+                        + "' (" + getPaisDeOrig() + ") "
+                        + ", possui a capacidade de " + getCapacidade() + " pessoas."
+                        + " Suas rodas possuem o diametro de " + getDiametroRoda() + " centimetros!");
+            }
+        }
