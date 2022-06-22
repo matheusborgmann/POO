@@ -17,22 +17,23 @@ public class Main {
         do {
 
             System.out.println("""
-                    1 - registrar um novo veiculo
-                    2 - interagir com um veiculo
-                    0 - sair""");
+                    1 - Registrar um novo veiculo
+                    2 - Interagir com um veiculo
+                    0 - Sair""");
             opc = sc.nextInt();
-            switch (opc){
+            switch (opc) {
                 case 1:
                     do {
                         System.out.println("""
-                                1 registar automovel
-                                2 registrar aviao
-                                3 registrar barco
-                                0 - retornar para o menu principal""");
+                                1 - Registar automovel
+                                2 - Registrar aviao
+                                3 - Registrar barco
+                                0 - Retornar para o menu principal""");
                         opt = sc.nextInt();
                         switch (opt) {
                             case 1:
-                                System.out.println("Digite o nome do veiculo: ");
+                                Fabricante car = new Fabricante();
+                                System.out.println("Digite o nome do automovel: ");
                                 sc.nextLine();
                                 auto.setNome(sc.nextLine());
                                 System.out.println("Digite o ano de fabricacao do automovel: ");
@@ -100,7 +101,7 @@ public class Main {
                                 3 - Barco
                                 0 - retornar ao menu principal""");
                         opt = sc.nextInt();
-                        switch (opt){
+                        switch (opt) {
                             case 1:
                                 do {
                                     System.out.println("""
@@ -198,7 +199,7 @@ public class Main {
                                 System.out.println("Opcao invalida");
                                 break;
                         }
-                    }while (opt != 0);
+                    } while (opt != 0);
                     break;
                 case 0:
                     System.out.println("Desligando sistema...");
@@ -207,7 +208,7 @@ public class Main {
                     System.out.println("Opcao Invalida");
                     break;
             }
-        }while (opc != 0);
+        } while (opc != 0);
 
         sc.close();
     }

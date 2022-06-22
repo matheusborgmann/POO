@@ -8,6 +8,25 @@ public abstract class Veiculo {
 
     protected int anoFabricacao;
     protected int capacidade;
+    protected Fabricante fabricante;
+
+    protected ArrayList<Barco> barcos;
+
+    public ArrayList<Barco> getBarcos() {
+        return barcos;
+    }
+
+    public void setBarcos(ArrayList<Barco> barcos) {
+        this.barcos = barcos;
+    }
+
+    public Veiculo(){
+        barcos = new ArrayList<Barco>();
+    }
+
+    public void setFabricante(Fabricante fabricante) {
+        this.fabricante = fabricante;
+    }
 
     public String getNome() {
         return nome;

@@ -1,6 +1,7 @@
 package Avaliacao2_Veiculos;
 
 public class Aviao extends Veiculo {
+
     private int numTurbinas;
 
     public int getNumTurbinas() {
