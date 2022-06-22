@@ -12,7 +12,7 @@ public class Automovel extends Veiculo {
     }
 
     public void abrirPortaMalas(){
-        System.out.println("O porta do carro foi aberto");
+        System.out.println("O porta-malas do carro foi aberto");
     }
 
     @Override
@@ -23,8 +23,7 @@ public class Automovel extends Veiculo {
     @Override
     public void mostrarDetalhes() {
         System.out.println("O automovel " + getNome() + ", produzido no ano de " + getAnoFabricacao()
-                + ", pela empresa '" + getNomeFab()
-                + " (" + getPaisDeOrig() + ")"
+                + ", pela empresa '" + fabricante
                 + "', possui a capacidade de " + getCapacidade() + " pessoas."
                 + " Suas rodas possuem o diametro de " + getDiametroRoda() + " centimetros!");
     }

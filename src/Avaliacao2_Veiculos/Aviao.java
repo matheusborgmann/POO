@@ -1,6 +1,7 @@
 package Avaliacao2_Veiculos;
 
 public class Aviao extends Veiculo {
+
     private int numTurbinas;
 
     public int getNumTurbinas() {
@@ -19,8 +20,7 @@ public class Aviao extends Veiculo {
     @Override
     public void mostrarDetalhes() {
         System.out.println("O aviao " + getNome() + ", produzido no ano de " + getAnoFabricacao()
-                + ", pela empresa '" + getNomeFab()
-                + " (" + getPaisDeOrig() + ")"
+                + ", pela empresa '" + fabricante
                 + "', possui a capacidade de " + getCapacidade() + " pessoas."
                 + " O aviao possui " + getNumTurbinas() + " turbinas!");
     }
