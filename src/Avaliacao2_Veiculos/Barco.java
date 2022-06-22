@@ -1,7 +1,12 @@
 package Avaliacao2_Veiculos;
 
 public class Barco extends Veiculo {
+
     private int numVelas;
+
+    public Barco(){
+
+    }
 
     public int getNumVelas() {
         return numVelas;
@@ -20,8 +25,7 @@ public class Barco extends Veiculo {
     public void mostrarDetalhes() {
         System.out.println("O barco " + getNome()
                 + ", produzido no ano de " + getAnoFabricacao()
-                + ", pela empresa '" + getNomeFab()
-                + " (" + getPaisDeOrig() + ")"
+                + ", pela empresa '" + fabricante
                 + "', possui a capacidade de " + getCapacidade() + " pessoas."
                 + " O barco possui " + getNumVelas() + " velas!");
     }

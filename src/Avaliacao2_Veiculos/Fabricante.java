@@ -20,4 +20,11 @@ public class Fabricante {
     public void setPaisDeOrigem(String paisDeOrigem) {
         this.paisDeOrigem = paisDeOrigem;
     }
+
+    @Override
+    public String toString() {
+        return this.nome + " ("
+                + this.paisDeOrigem +
+                ')';
+    }
 }

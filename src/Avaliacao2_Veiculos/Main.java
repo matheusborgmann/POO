@@ -7,8 +7,11 @@ public class Main {
         Scanner sc = new Scanner(System.in);
 
         Automovel auto = new Automovel();
+        Automovel auto2 = new Automovel();
         Aviao aviao = new Aviao();
+        Aviao aviao2 = new Aviao();
         Barco barco = new Barco();
+        Barco barco2 = new Barco();
 
         int opc, opt;
         do {
@@ -99,19 +102,94 @@ public class Main {
                         opt = sc.nextInt();
                         switch (opt){
                             case 1:
-                                auto.acelerar();
-                                auto.abrirPortaMalas();
+                                do {
+                                    System.out.println("""
+                                            1 - Acelerar automovel
+                                            2 - Abrir porta-malas
+                                            3 - Mostrar detalhes do automovel
+                                            0 - Retornar para o menu principal""");
+                                    opt = sc.nextInt();
+                                    switch (opt) {
+                                        case 1:
+                                            auto.acelerar();
+                                            break;
+                                        case 2:
+                                            auto.abrirPortaMalas();
+                                            break;
+                                        case 3:
+                                            auto.mostrarDetalhes();
+                                            break;
+                                        case 0:
+                                            System.out.println("retornando...");
+                                            break;
+                                        default:
+                                            System.out.println("Opcao invalida");
+                                            break;
+                                    }
+                                } while (opt != 0);
+
                                 break;
                             case 2:
-                                aviao.acelerar();
-                                aviao.decolar();
-                                aviao.pousar();
-                                aviao.acelerar();
+                                do {
+                                    System.out.println("1 - Acelerar aviao" +
+                                            "\n2 - Decolar aviao" +
+                                            "\n3 - Pousar aviao" +
+                                            "\n4 - Mostrar detalhes do aviao" +
+                                            "\n0 - Retornar para o menu principal");
+                                    opt = sc.nextInt();
+                                    switch (opt) {
+                                        case 1:
+                                            aviao.acelerar();
+                                            break;
+                                        case 2:
+                                            aviao.decolar();
+                                            break;
+                                        case 3:
+                                            aviao.pousar();
+                                            break;
+                                        case 4:
+                                            aviao.mostrarDetalhes();
+                                            break;
+                                        case 0:
+                                            System.out.println("retornando...");
+                                            break;
+                                        default:
+                                            System.out.println("Opcao invalida");
+                                            break;
+                                    }
+                                } while (opt != 0);
+
                                 break;
                             case 3:
-                                barco.icarVelas();
-                                barco.recolherVelas();
-                                barco.acelerar();
+                                do {
+                                    System.out.println("1 - Icar velas" +
+                                            "\n2 - Recolher velas" +
+                                            "\n3 - Acelerar barco" +
+                                            "\n4 - Mostrar detalhes do barco" +
+                                            "\n0 - Retornar para o menu principal");
+                                    opt = sc.nextInt();
+                                    switch (opt) {
+                                        case 1:
+                                            barco.icarVelas();
+                                            break;
+                                        case 2:
+                                            barco.recolherVelas();
+                                            break;
+                                        case 3:
+                                            barco.acelerar();
+                                            break;
+                                        case 4:
+                                            barco.mostrarDetalhes();
+                                            break;
+                                        case 0:
+                                            System.out.println("retornando...");
+                                            break;
+                                        default:
+                                            System.out.println("Opcao invalida");
+                                            break;
+                                    }
+                                } while (opt != 0);
+
                                 break;
                             case 0:
                                 System.out.println("Retornando ao menu principal....");
