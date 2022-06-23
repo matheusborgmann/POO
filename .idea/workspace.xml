@@ -3,12 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f56976cb-12b4-48ac-84ba-5c507dfa7d3f" name="Changes" comment="Começando a A2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Avaliacao2_Veiculos/Automovel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Avaliacao2_Veiculos/Automovel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Avaliacao2_Veiculos/Aviao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Avaliacao2_Veiculos/Aviao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Avaliacao2_Veiculos/Barco.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Avaliacao2_Veiculos/Barco.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Avaliacao2_Veiculos/Fabricante.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Avaliacao2_Veiculos/Fabricante.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Avaliacao2_Veiculos/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Avaliacao2_Veiculos/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Avaliacao2_Veiculos/Veiculo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Avaliacao2_Veiculos/Veiculo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Avaliacao2_AcademiaDeGinastica/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Avaliacao2_AcademiaDeGinastica/Main.java" afterDir="false" />
     </list>
     <list id="d1ddb4a5-12cb-4e0f-9806-66edcd7d6502" name="Changes by Juan" comment="Changes by Juan">
       <change beforePath="$PROJECT_DIR$/src/Avaliacao2_Veiculos/Aviao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Avaliacao2_Veiculos/Aviao.java" afterDir="false" />
@@ -61,54 +56,6 @@
       </UrlAndAccount>
     </option>
   </component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/src/Avaliacao2_Veiculos/Veiculo.java">
-      <ranges>
-        <range start1="6" end1="6" start2="6" end2="8" changelist="d1ddb4a5-12cb-4e0f-9806-66edcd7d6502" />
-        <range start1="7" end1="7" start2="9" end2="12" changelist="f56976cb-12b4-48ac-84ba-5c507dfa7d3f" />
-        <range start1="8" end1="11" start2="13" end2="20" changelist="f56976cb-12b4-48ac-84ba-5c507dfa7d3f" />
-        <range start1="12" end1="16" start2="21" end2="23" changelist="f56976cb-12b4-48ac-84ba-5c507dfa7d3f" />
-        <range start1="18" end1="20" start2="25" end2="27" changelist="f56976cb-12b4-48ac-84ba-5c507dfa7d3f" />
-        <range start1="22" end1="24" start2="29" end2="31" changelist="f56976cb-12b4-48ac-84ba-5c507dfa7d3f" />
-        <range start1="26" end1="28" start2="33" end2="35" changelist="f56976cb-12b4-48ac-84ba-5c507dfa7d3f" />
-        <range start1="29" end1="29" start2="36" end2="40" changelist="f56976cb-12b4-48ac-84ba-5c507dfa7d3f" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/src/Avaliacao2_Veiculos/Main.java">
-      <ranges>
-        <range start1="1" end1="1" start2="1" end2="3" changelist="f56976cb-12b4-48ac-84ba-5c507dfa7d3f" />
-        <range start1="8" end1="14" start2="10" end2="13" changelist="f56976cb-12b4-48ac-84ba-5c507dfa7d3f" />
-        <range start1="15" end1="15" start2="14" end2="19" changelist="f56976cb-12b4-48ac-84ba-5c507dfa7d3f" />
-        <range start1="17" end1="18" start2="21" end2="21" changelist="f21f4c77-3053-4c25-8d76-06709e69769b" />
-        <range start1="34" end1="35" start2="37" end2="40" changelist="f56976cb-12b4-48ac-84ba-5c507dfa7d3f" />
-        <range start1="37" end1="38" start2="42" end2="43" changelist="f56976cb-12b4-48ac-84ba-5c507dfa7d3f" />
-        <range start1="39" end1="46" start2="44" end2="45" changelist="f56976cb-12b4-48ac-84ba-5c507dfa7d3f" />
-        <range start1="47" end1="48" start2="46" end2="52" changelist="f56976cb-12b4-48ac-84ba-5c507dfa7d3f" />
-        <range start1="49" end1="70" start2="53" end2="83" changelist="f56976cb-12b4-48ac-84ba-5c507dfa7d3f" />
-        <range start1="73" end1="74" start2="86" end2="89" changelist="f56976cb-12b4-48ac-84ba-5c507dfa7d3f" />
-        <range start1="76" end1="77" start2="91" end2="92" changelist="f56976cb-12b4-48ac-84ba-5c507dfa7d3f" />
-        <range start1="78" end1="80" start2="93" end2="96" changelist="f56976cb-12b4-48ac-84ba-5c507dfa7d3f" />
-        <range start1="81" end1="90" start2="97" end2="105" changelist="f56976cb-12b4-48ac-84ba-5c507dfa7d3f" />
-        <range start1="91" end1="91" start2="106" end2="107" changelist="f56976cb-12b4-48ac-84ba-5c507dfa7d3f" />
-        <range start1="110" end1="136" start2="126" end2="161" changelist="f56976cb-12b4-48ac-84ba-5c507dfa7d3f" />
-        <range start1="138" end1="168" start2="163" end2="202" changelist="f56976cb-12b4-48ac-84ba-5c507dfa7d3f" />
-        <range start1="169" end1="198" start2="203" end2="240" changelist="f56976cb-12b4-48ac-84ba-5c507dfa7d3f" />
-        <range start1="216" end1="217" start2="258" end2="258" changelist="f56976cb-12b4-48ac-84ba-5c507dfa7d3f" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/src/Avaliacao2_Veiculos/Barco.java">
-      <ranges>
-        <range start1="6" end1="8" start2="6" end2="9" changelist="f56976cb-12b4-48ac-84ba-5c507dfa7d3f" />
-        <range start1="27" end1="29" start2="28" end2="31" changelist="d1ddb4a5-12cb-4e0f-9806-66edcd7d6502" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/src/Avaliacao2_Veiculos/Aviao.java">
-      <ranges>
-        <range start1="6" end1="6" start2="6" end2="11" changelist="f56976cb-12b4-48ac-84ba-5c507dfa7d3f" />
-        <range start1="22" end1="24" start2="27" end2="30" changelist="d1ddb4a5-12cb-4e0f-9806-66edcd7d6502" />
-      </ranges>
-    </file>
-  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -141,7 +88,7 @@
       <recent name="C:\Users\Matheus\IdeaProjects\untitled\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Avaliacao2_Veiculos.Main">
+  <component name="RunManager" selected="Application.Avaliacao2_AcademiaDeGinastica.Main">
     <configuration name="Avaliacao1_1_Agenda.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Avaliacao1_1_Agenda.Main" />
       <module name="POO" />
@@ -155,12 +102,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Avaliacao1_3_Studant.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Avaliacao1_3_Studant.Main" />
+    <configuration name="Avaliacao1_4_Artistas.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Avaliacao1_4_Artistas.Main" />
       <module name="POO" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Avaliacao1_3_Studant.*" />
+          <option name="PATTERN" value="Avaliacao1_4_Artistas.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -168,12 +115,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Avaliacao1_4_Artistas.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Avaliacao1_4_Artistas.Main" />
+    <configuration name="Avaliacao2_AcademiaDeGinastica.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Avaliacao2_AcademiaDeGinastica.Main" />
       <module name="POO" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Avaliacao1_4_Artistas.*" />
+          <option name="PATTERN" value="Avaliacao2_AcademiaDeGinastica.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -209,11 +156,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Avaliacao2_AcademiaDeGinastica.Main" />
         <item itemvalue="Application.Avaliacao2_Veiculos.Main" />
         <item itemvalue="Application.Avaliacao1_1_Agenda.Main" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Avaliacao1_4_Artistas.Main" />
-        <item itemvalue="Application.Avaliacao1_3_Studant.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -422,7 +369,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655917329158</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Começando a A2">
+      <created>1655941349217</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1655941349217</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -460,10 +414,10 @@
     <MESSAGE value="Parte 5 ARRUMADA" />
     <MESSAGE value=" Finalizada" />
     <MESSAGE value=" Finalizada e formatada" />
-    <MESSAGE value="Começando a A2" />
     <MESSAGE value="Changes by Juan" />
     <MESSAGE value="Changes by User" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changes by User" />
+    <MESSAGE value="Começando a A2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Começando a A2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -472,11 +426,6 @@
           <properties class="java.lang.IndexOutOfBoundsException" package="java.lang" />
           <option name="timeStamp" value="3" />
         </breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Avaliacao2_Veiculos/Main.java</url>
-          <line>209</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
