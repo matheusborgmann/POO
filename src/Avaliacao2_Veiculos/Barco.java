@@ -26,8 +26,9 @@ public class Barco extends Veiculo {
     public void mostrarDetalhes() {
         System.out.println("O barco " + getNome()
                 + ", produzido no ano de " + getAnoFabricacao()
-                + ", pela empresa '" + fabricante
-                + "', possui a capacidade de " + getCapacidade() + " pessoas."
+                + ", pela empresa '" + getNomeFab()
+                + "' (" + getPaisDeOrig() + ") "
+                + ", possui a capacidade de " + getCapacidade() + " pessoas."
                 + " O barco possui " + getNumVelas() + " velas!");
     }
 
