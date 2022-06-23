@@ -25,7 +25,7 @@ public class Aviao extends Veiculo {
     @Override
     public void mostrarDetalhes() {
         System.out.println("O aviao " + getNome() + ", produzido no ano de " + getAnoFabricacao()
-                + ", pela empresa '" + getNomeFab()
+                + ", pela empresa '" + getNomeFab() 
                 + "' (" + getPaisDeOrig() + ") "
                 + ", possui a capacidade de " + getCapacidade() + " pessoas."
                 + " O aviao possui " + getNumTurbinas() + " turbinas!");
