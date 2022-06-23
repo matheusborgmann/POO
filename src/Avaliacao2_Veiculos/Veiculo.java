@@ -4,6 +4,8 @@ import java.util.ArrayList;
 
 public abstract class Veiculo {
 
+    protected int anoFabricacao;
+    protected int capacidade;
     protected String nome;
     /*protected Fabricante fabricante;*/
     protected String nomeFab;
