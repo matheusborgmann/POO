@@ -4,8 +4,9 @@ public class Barco extends Veiculo {
 
     private int numVelas;
 
-    public Barco(){
-
+    public Barco(String nome, int anoFabricacao, int capacidade, String nomeFab, String paisDeOrig, int numVelas) {
+        super(nome, anoFabricacao, capacidade, nomeFab, paisDeOrig);
+        this.numVelas = numVelas;
     }
 
     public int getNumVelas() {
