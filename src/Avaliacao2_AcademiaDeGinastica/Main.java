@@ -1,33 +1,75 @@
+/*
+    NÃO CONSEGUI FAZER A 2 A TEMPO :C
+*/
+
+
 package Avaliacao2_AcademiaDeGinastica;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) throws SQLException {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
 
-        String stringDeConexao = "jdbc:mysql://localhost:3306";
-        String usuario = "root";
-        String senha = "";
+        ArrayList<Turma> t = new ArrayList<>();
+        int op;
 
-        System.out.println("Abrindo conexao...");
-        Connection conexao = DriverManager.getConnection(stringDeConexao, usuario, senha);
+        do {
+            System.out.println("""
+                    1 - Visualizar turmas
+                    2 - Registrar Turma
+                    3 - Registrar instrutor para uma turma
+                    0 - Fechar sistema.
+                    """);
+            op = sc.nextInt();
+            switch (op) {
+                case 1:
+                    System.out.println(t);
+                    break;
+                case 2:
+                    String nome, horAula, durAula, dataIni, dataFim, atividade;
+                    int numAlunos;
+                    System.out.println("Nome:");
+                    sc.nextLine();
+                    nome = sc.nextLine();
+                    System.out.println("Numero de alunos:");
+                    numAlunos = sc.nextInt();
+                    System.out.println("Horario da aula:");
+                    sc.nextLine();
+                    horAula= sc.nextLine();
+                    System.out.println("Duração da aula");
+                    durAula = sc.nextLine();
+                    System.out.println("Data inicial:");
+                    dataIni = sc.nextLine();
+                    System.out.println("Data fim:");
+                    dataFim = sc.nextLine();
+                    System.out.println("Tipo de atividade:");
+                    atividade = sc.nextLine();
 
-        System.out.println("Apagando a base de dados");
-        String sql = "DROP DATABASE IF EXISTS academiaB";
-        PreparedStatement comando = conexao.prepareStatement(sql);
-        comando.execute();
-        comando.close();
-
-        System.out.println("Criando a base de dados livraria...");
-        sql = "CREATE DATABASE academia";
-        comando = conexao.prepareStatement(sql);
-        comando.execute();
-        comando.close();
-
-        System.out.println("Fechando a conexão...");
-        conexao.close();
+                    t.add(new Turma(nome, numAlunos, horAula, durAula, dataIni, dataFim, atividade));
+                    break;
+                case 3:
+                    Instrutor i = new Instrutor();
+                    System.out.println("Nome do instrutor");
+                    i.setNome(sc.nextLine());
+                    System.out.println("RG do instrutor:");
+                    i.setRg(sc.nextLine());
+                    System.out.println("Data de nascimento do instrutor:");
+                    i.setDataNasc(sc.nextLine());
+                    System.out.println("Titulação do instrutor:");
+                    i.setTitu(sc.nextLine());
+                    System.out.println("Telefone do instrutor:");
+                    i.setTel(sc.nextLine());
+                    t.add(new Turma(i));
+                    break;
+                case 0:
+                    System.out.println("0");
+                    break;
+                default:
+                    System.out.println("Opção invalida");
+                    break;
+            }
+        } while (op != 0);
     }
 }
