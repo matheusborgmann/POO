@@ -1,17 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f56976cb-12b4-48ac-84ba-5c507dfa7d3f" name="Changes" comment="Começando a A2">
+    <list default="true" id="f56976cb-12b4-48ac-84ba-5c507dfa7d3f" name="Changes" comment="Acabado a2 veiculo">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POO.iml" beforeDir="false" afterPath="$PROJECT_DIR$/POO.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Avaliacao2_AcademiaDeGinastica/Instrutor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Avaliacao2_AcademiaDeGinastica/Instrutor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Avaliacao2_AcademiaDeGinastica/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Avaliacao2_AcademiaDeGinastica/Main.java" afterDir="false" />
-    </list>
-    <list id="d1ddb4a5-12cb-4e0f-9806-66edcd7d6502" name="Changes by Juan" comment="Changes by Juan">
+      <change beforePath="$PROJECT_DIR$/src/Avaliacao2_AcademiaDeGinastica/Turma.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Avaliacao2_AcademiaDeGinastica/Turma.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Avaliacao2_Veiculos/Aviao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Avaliacao2_Veiculos/Aviao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Avaliacao2_Veiculos/Barco.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Avaliacao2_Veiculos/Barco.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Avaliacao2_Veiculos/Veiculo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Avaliacao2_Veiculos/Veiculo.java" afterDir="false" />
     </list>
-    <list id="f21f4c77-3053-4c25-8d76-06709e69769b" name="Changes by poolo" comment="">
+    <list id="f21f4c77-3053-4c25-8d76-06709e69769b" name="Changes by poolo" comment="Changes by poolo">
       <change beforePath="$PROJECT_DIR$/src/Avaliacao2_Veiculos/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Avaliacao2_Veiculos/Main.java" afterDir="false" />
+    </list>
+    <list id="145edaf8-ec60-4808-9c49-c1a82ee51846" name="Changes by User" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Avaliacao2_AcademiaDeGinastica/Aluno.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,11 +77,11 @@
     "TODO_SCOPE": "All Places",
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "create.test.in.the.same.root": "true",
-    "last_opened_file_path": "C:/Users/Matheus/IdeaProjects/POO",
+    "last_opened_file_path": "C:/Users/Matheus/Desktop/mysql-connector-java-8.0.29.jar",
     "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "reference.settings.ide.settings.spelling"
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.20114942",
+    "settings.editor.selected.configurable": "preferences.intentionPowerPack"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -95,19 +97,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Avaliacao1_1_Agenda.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Avaliacao1_4_Artistas.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Avaliacao1_4_Artistas.Main" />
-      <module name="POO" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Avaliacao1_4_Artistas.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -141,12 +130,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Avaliacao1_5_Informacao.Main" />
+    <configuration name="Program" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ProjetoArray.Program" />
       <module name="POO" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Avaliacao1_5_Informacao.*" />
+          <option name="PATTERN" value="ProjetoArray.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Program3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ProjetoArray.Program3" />
+      <module name="POO" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ProjetoArray.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -157,10 +159,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Avaliacao2_AcademiaDeGinastica.Main" />
-        <item itemvalue="Application.Avaliacao2_Veiculos.Main" />
         <item itemvalue="Application.Avaliacao1_1_Agenda.Main" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.Avaliacao1_4_Artistas.Main" />
+        <item itemvalue="Application.Program3" />
+        <item itemvalue="Application.Program" />
+        <item itemvalue="Application.Avaliacao2_Veiculos.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -376,7 +378,28 @@
       <option name="project" value="LOCAL" />
       <updated>1655941349217</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Acabado a2 veiculo">
+      <created>1655946597107</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1655946597107</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Changes by Juan">
+      <created>1655946601688</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1655946601688</updated>
+    </task>
+    <task id="LOCAL-00032" summary="acabando a a2 veiculos">
+      <created>1655946832401</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1655946832401</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -414,10 +437,12 @@
     <MESSAGE value="Parte 5 ARRUMADA" />
     <MESSAGE value=" Finalizada" />
     <MESSAGE value=" Finalizada e formatada" />
-    <MESSAGE value="Changes by Juan" />
     <MESSAGE value="Changes by User" />
     <MESSAGE value="Começando a A2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Começando a A2" />
+    <MESSAGE value="Changes by Juan" />
+    <MESSAGE value="Acabado a2 veiculo" />
+    <MESSAGE value="acabando a a2 veiculos" />
+    <option name="LAST_COMMIT_MESSAGE" value="acabando a a2 veiculos" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -426,6 +451,15 @@
           <properties class="java.lang.IndexOutOfBoundsException" package="java.lang" />
           <option name="timeStamp" value="3" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/Avaliacao2_Veiculos/Veiculo.java</url>
+          <line>21</line>
+          <properties class="Avaliacao2_Veiculos.Veiculo" method="getNomeFab">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
